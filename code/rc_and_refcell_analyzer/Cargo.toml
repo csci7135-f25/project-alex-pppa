@@ -1,0 +1,15 @@
+[package]
+name = "refcell_analyzer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# AST parsing and locations
+syn = {version="2.0", features = ["full", "extra-traits"]}
+proc-macro2 = {version="1.0", features = ["span-locations"]}
+
+# Pretty printing to console
+quote = "1.0"
+
+# Error enum/struct generation
+thiserror = "2.0"
